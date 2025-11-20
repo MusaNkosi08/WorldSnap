@@ -1,0 +1,38 @@
+{
+  "name": "worldsnap-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for WorldSnap Play-to-Earn game on Celo",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:alfajores": "hardhat run deploy.js --network alfajores",
+    "deploy:celo": "hardhat run deploy.js --network celo",
+    "verify": "hardhat verify --network alfajores",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "celo",
+    "blockchain",
+    "smart-contracts",
+    "play-to-earn",
+    "worldsnap",
+    "geoguessr"
+  ],
+  "author": "WorldSnap Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0"
+  }
+}
